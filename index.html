@@ -154,4 +154,101 @@
             padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            box
+            box-sizing: border-box;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        .contacto input[type="email"]:focus,
+        .contacto textarea :focus {
+            border-color: #d4af37;
+            outline: none;
+        }
+
+        .contacto textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contacto button {
+            margin-top: 10px;
+            align-self: center;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DESTELLOS</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Resalta tu brillo único</h2>
+        <p>Descubre nuestra nueva colección de bisutería fina hecha a mano.</p>
+        <a href="#coleccion" class="btn-cta">Ver Colección</a>
+    </section>
+
+    <section class="productos" id="coleccion">
+        <h2>Nuestras Piezas Destacadas</h2>
+        <div class="grid-productos">
+            
+            <div class="tarjeta-producto">
+                <div class="placeholder-imagen">[ Foto Collar ]</div>
+                <h3>Collar Luna Dorada</h3>
+                <div class="precio">$15.99</div>
+                <a href="#" class="btn-cta" style="padding: 8px 15px; font-size: 14px;">Comprar</a>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="placeholder-imagen">[ Foto Pendientes ]</div>
+                <h3>Pendientes Perla Elegante</h3>
+                <div class="precio">$12.50</div>
+                <a href="#" class="btn-cta" style="padding: 8px 15px; font-size: 14px;">Comprar</a>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="placeholder-imagen">[ Foto Pulsera ]</div>
+                <h3>Pulsera Cuarzo Rosa</h3>
+                <div class="precio">$10.00</div>
+                <a href="#" class="btn-cta" style="padding: 8px 15px; font-size: 14px;">Comprar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contacto">
+        <h2>¿Tienes alguna duda o pedido especial?</h2>
+        <p>Escríbenos y te responderemos lo antes posible.</p>
+        
+        <form action="https://formspree.io/f/mvzjvqyb" method="POST">
+            <label>
+                Tu correo electrónico:
+                <input type="email" name="email" required placeholder="ejemplo@correo.com">
+            </label>
+            
+            <label>
+                Tu mensaje:
+                <textarea name="message" required placeholder="Cuéntanos qué pieza te interesa..."></textarea>
+            </label>
+            
+            <button type="submit" class="btn-cta">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Destellos Bisutería. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
